@@ -61,6 +61,17 @@
     color:var(--ink-3);font-weight:800;margin-bottom:8px}
   .frase .txt{font-family:var(--display);font-size:1.32rem;font-weight:700;line-height:1.12;
     color:var(--lime);letter-spacing:.01em}
+  /* chamadas adaptadas dentro de uma referencia */
+  .rot{font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--lime);font-weight:800;margin:18px 0 9px}
+  .frases.dois{margin-bottom:0}
+  .frases.dois .frase{padding:14px 16px}
+  .frases.dois .txt{font-size:1.14rem}
+  /* a chamada do asfalto, uma frase so pras duas edicoes */
+  .chamada{background:var(--bg);border:1px dashed var(--lime);border-radius:12px;
+    padding:20px 22px;margin-bottom:18px;font-family:var(--display);font-size:1.85rem;
+    font-weight:700;line-height:1.08;color:var(--lime);letter-spacing:.01em;text-wrap:balance}
+  @media(max-width:640px){ .chamada{font-size:1.5rem;padding:16px 18px} }
 
   .fecho{margin-top:40px;border-top:1px solid var(--line);padding-top:22px}
   .fecho h2{font-family:var(--display);font-size:1.35rem;margin:0 0 14px}
@@ -105,6 +116,11 @@
         <li>Por isso a data não se perde no meio do texto grande.</li>
         <li><b>Na nossa identidade</b> a caixa vira verde-limão, que já é o padrão da arte de line up.</li>
       </ul>
+      <p class="rot">Nossas chamadas</p>
+      <div class="frases dois">
+        <div class="frase"><div class="txt">Vai perder o maior evento de experiências do mundo?</div></div>
+        <div class="frase"><div class="txt">Vai perder o maior festival de agosto do Brasil?</div></div>
+      </div>
     </div>
   </article>
 
@@ -152,13 +168,10 @@
     <p class="num">O caminho que é só nosso</p>
     <h2>Os ingressos de test ride e test drive</h2>
     <p>Peça só pro ingresso de pilotar e dirigir, não pro ingresso geral. A frase vai escrita no asfalto de Interlagos, como pintura de solo da pista.</p>
-    <div class="frases">
-      <div class="frase"><div class="ed">Edição moto</div><div class="txt">Últimos ingressos para pilotar</div></div>
-      <div class="frase"><div class="ed">Edição auto</div><div class="txt">Últimos ingressos para dirigir</div></div>
-    </div>
+    <div class="chamada">Últimos ingressos para pilotar ou dirigir</div>
     <ul>
-      <li>O texto deitado em perspectiva no chão, na tinta branca da marcação de pista.</li>
-      <li>O asfalto é o fundo, não uma textura por trás.</li>
+      <li>O texto deitado em perspectiva no chão, na tinta branca da marcação de pista. O asfalto é o fundo, não uma textura por trás.</li>
+      <li>Uma frase só serve as duas edições, moto e auto.</li>
       <li>Nenhuma das cinco referências consegue fazer isso, porque nenhuma acontece num autódromo.</li>
     </ul>
   </section>
