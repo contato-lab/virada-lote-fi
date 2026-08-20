@@ -57,6 +57,8 @@
   tr:last-child td{border-bottom:0}
   td:first-child{color:var(--ink);font-weight:600}
 
+  a{color:var(--lime);text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+  a:hover{color:var(--ink)}
   .topo{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:8px}
   .eyebrow{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
     color:var(--lime);font-weight:800;margin:0 0 9px}
@@ -252,7 +254,18 @@ Mesma barra, versão curta. Não é a peça 10 reduzida, é outro arquivo.
 
 Aparece no resultado de busca do desktop, do lado dos anúncios de carro.
 
-- **Ideia de vídeo:** carro entrando na pista, aceleração, câmera de dentro. Sem locução
+**Não precisa gravar nada.** Dá pra adaptar o vídeo que já existe, o do painel de rua:
+
+[OOH] AUTO POV_1.mp4 → https://drive.google.com/file/d/1slgooyTkMX_PLPvBlNziAg2GnHJMd_KW/view
+
+É um POV de dentro do carro na pista de Interlagos, com a torre e a arquibancada aparecendo. A promessa da peça já está lá.
+
+O que muda na adaptação:
+
+- **Reenquadrar de widescreen pra 1:1.** Cortar pelas laterais, mantendo o volante embaixo e a pista à frente. A torre pode sair, o traçado da pista não
+- **Cortar pra 5 a 15 segundos**, que é o teto do formato
+- **Fechar com um card de 2 segundos** com o título, o Drive Pass e o logo. O original é de rua e termina sem chamada
+- **Tem que funcionar mudo.** Vídeo nativo começa sem som, então a informação vai na tela, não no áudio
 - **Título:** `Pilote 3 carros em Interlagos`
 - **Texto:** `Drive Pass do Suhai Festival Interlagos. Três carros na pista principal, de 27 a 30 de agosto.`
 
@@ -285,6 +298,7 @@ Aparece no resultado de busca do desktop, do lado dos anúncios de carro.
 
 
 
+
 </script>
 <script>
 /* Conversor de markdown enxuto, escrito aqui de proposito em vez de puxar
@@ -306,6 +320,11 @@ Aparece no resultado de busca do desktop, do lado dos anúncios de carro.
     s = esc(s);
     s = s.replace(/`([^`]+)`/g, function(_, t){ return "<code>" + t + "</code>"; });
     s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    // link solto vira clicavel. O briefing aponta pro arquivo de video no Drive,
+    // e endereco escrito que nao clica obriga a pessoa a copiar na mao.
+    s = s.replace(/(https?:\/\/[^\s<]+)/g, function(u){
+      return '<a href="' + u + '" target="_blank" rel="noopener">' + u + '</a>';
+    });
     return s;
   }
   function linhaTabela(l){
@@ -382,6 +401,7 @@ Aparece no resultado de busca do desktop, do lado dos anúncios de carro.
 
 })();
 </script>
+
 
 
 
