@@ -67,12 +67,6 @@
   .troca .seta{color:var(--ink-3);font-size:1.1rem}
   @media(max-width:560px){ .troca{grid-template-columns:1fr;gap:6px} .troca .seta{display:none} }
 
-  .alerta{background:var(--panel);border:1px solid var(--sai);border-radius:14px;
-    padding:18px 20px;margin:0 0 26px}
-  .alerta h3{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
-    color:var(--sai);font-weight:800;margin:0 0 10px}
-  .alerta li::before{background:var(--sai)}
-
   .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:4px}
   .dia{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
   .dia .d{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
@@ -93,17 +87,6 @@
     falar só da auto. São duas peças, e as duas mudanças são as mesmas: tirar quem é de moto, trocar
     a data e trocar o preço.</p>
   </header>
-
-  <div class="alerta">
-    <h3>Confirmar antes de publicar</h3>
-    <ul>
-      <li><b>O preço novo é R$ 180,00, mas o site ainda vende a R$ 152,00.</b> Conferi hoje em
-      auto.festivalinterlagos.com.br: o Street Pass está a R$ 152. Arte no ar com um preço e site
-      com outro é reclamação na hora da compra.</li>
-      <li>Ou seja: a arte fica pronta agora, mas <b>só entra no ar junto com a virada de lote</b>.
-      Quem dá esse ok é a coordenação de mídia, não a criação.</li>
-    </ul>
-  </div>
 
   <!-- ══════════ PEÇA 1 ══════════ -->
   <section class="peca">
@@ -127,21 +110,17 @@
         <span class="nome sai">Matheus &amp; Kauan</span>
         <span class="nome sai">Pedro Sampaio</span>
       </div>
-      <p class="legenda">Podem entrar no lugar (todos são da auto)</p>
+      <p class="legenda">Entram nas quatro posições que vagaram</p>
       <div class="nomes">
-        <span class="nome">Hungria</span>
-        <span class="nome">L7NNON</span>
-        <span class="nome">Dennis</span>
-        <span class="nome">Dubdogz</span>
-        <span class="nome">Belo</span>
-        <span class="nome">Péricles</span>
-        <span class="nome">Felth</span>
-        <span class="nome">Marco Suhai</span>
+        <span class="nome fica">Hungria</span>
+        <span class="nome fica">L7NNON</span>
+        <span class="nome fica">Dennis</span>
+        <span class="nome fica">Belo</span>
       </div>
       <ul style="margin-top:16px">
-        <li>São <b>seis posições</b> hoje. Duas já estão certas, faltam quatro.</li>
-        <li>A escolha de quem entra é da criação junto da coordenação, mas <b>Hungria e L7NNON
-        seguram a leitura</b> tão bem quanto os que saem.</li>
+        <li>Fecha em <b>seis nomes</b>, na ordem que a criação achar melhor:
+        Hungria, L7NNON, Dennis, Belo, Matuê e Ja Rule. São os mais conhecidos da auto e
+        a escolha já está fechada, não precisa voltar pra aprovação.</li>
         <li>O recorte continua o mesmo: uma fileira só, na altura do peito.</li>
       </ul>
     </div>
@@ -190,14 +169,19 @@
         <span class="nome fica">Ja Rule · 29/08</span>
         <span class="nome fica">Matuê · 28/08</span>
       </div>
-      <p class="legenda">Saem, e precisam ser substituídos por dois de auto</p>
+      <p class="legenda">Saem</p>
       <div class="nomes">
         <span class="nome sai">Ludmilla · 15/08</span>
         <span class="nome sai">Thiaguinho · 16/08</span>
       </div>
+      <p class="legenda">Entram no lugar deles, com foto e data</p>
+      <div class="nomes">
+        <span class="nome fica">Hungria · 29/08</span>
+        <span class="nome fica">Belo · 30/08</span>
+      </div>
       <ul style="margin-top:16px">
-        <li>Os selos embaixo do nome viram <b>EDIÇÃO AUTO</b> nos quatro. Hoje dois dizem moto.</li>
-        <li>As datas dos dois novos saem da grade oficial que está no fim desta página.</li>
+        <li>Os selos embaixo do nome viram <b>EDIÇÃO AUTO</b> nos quatro.</li>
+        <li>As datas acima já são as da grade oficial: Hungria toca no sábado, Belo no domingo.</li>
       </ul>
     </div>
 
@@ -205,14 +189,17 @@
       <h3>A lista de baixo</h3>
       <p class="legenda">Ficam, são da auto</p>
       <div class="nomes">
-        <span class="nome fica">Belo</span>
         <span class="nome fica">Dennis</span>
         <span class="nome fica">Dubdogz</span>
         <span class="nome fica">Felth</span>
-        <span class="nome fica">Hungria</span>
         <span class="nome fica">L7NNON</span>
         <span class="nome fica">Marco Suhai</span>
         <span class="nome fica">Péricles</span>
+      </div>
+      <p class="legenda">Saem da lista porque sobem pro destaque com foto</p>
+      <div class="nomes">
+        <span class="nome sai">Hungria</span>
+        <span class="nome sai">Belo</span>
       </div>
       <p class="legenda">Saem, não tocam na auto</p>
       <div class="nomes">
@@ -225,9 +212,10 @@
         <span class="nome sai">Pedro Sampaio</span>
       </div>
       <ul style="margin-top:16px">
-        <li>A lista cai de 15 para 8 nomes. <b>Sobra espaço</b>, então dá pra fechar em três linhas
+        <li>A lista cai de <b>15 para 6 nomes</b>. Sobra espaço, então dá pra fechar em duas linhas
         em vez de quatro, ou crescer o corpo do texto.</li>
-        <li>Os dois que subirem pro destaque saem da lista, senão aparecem duas vezes.</li>
+        <li>Hungria e Belo saem daqui porque sobem pro destaque com foto. Se ficassem nos dois
+        lugares, apareceriam duas vezes na mesma arte.</li>
       </ul>
     </div>
 
